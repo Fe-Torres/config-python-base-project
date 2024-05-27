@@ -1,8 +1,7 @@
 [tool.black]
 line-lenght = 79
 include = '\.piy?$'
-exclude = '''
-/(
+exclude = '''/(
   \.git
  | \.hg
  | \.mypy_cache
