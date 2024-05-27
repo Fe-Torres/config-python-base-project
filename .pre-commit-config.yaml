@@ -2,7 +2,8 @@ repos:
 -   repo: https://github.com/ambv/black
     rev: 20.8b1
     hooks:
-    - id: black
+      - id: black
+        entry: bash -c 'black "$@"; git add -u' --
 
 -   repo: https://github.com/pycqa/flake8
     rev: 3.8.4
